@@ -2409,19 +2409,31 @@
   <div id="tab-hotel" class="tab-panel">
 
     <div class="hotel-hero">
-      <div style="font-size:1.5rem;font-weight:800;color:var(--gold-400);">SF Marriott Marquis</div>
+      <div style="font-size:1.5rem;font-weight:800;color:var(--gold-400);">San Francisco Marriott Marquis</div>
       <div style="color:var(--text-secondary);margin-top:4px;">780 Mission Street · San Francisco, CA 94103</div>
+      <div style="color:var(--text-muted);font-size:0.85rem;margin-top:2px;">⭐ 4.1 (6,043 reviews) · 0 mi from Moscone Center · SOMA District</div>
       <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
-        <a href="tel:14158961600" class="action-btn">📞 (415) 896-1600</a>
+        <a href="tel:14158961600" class="action-btn">📞 +1 415-896-1600</a>
         <a href="https://maps.google.com/?daddr=SF+Marriott+Marquis,+780+Mission+St,+San+Francisco,+CA+94103" target="_blank" rel="noopener" class="action-btn action-btn-directions">📍 Directions</a>
         <a href="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=37.7846&dropoff[longitude]=-122.4025&dropoff[nickname]=SF+Marriott+Marquis" target="_blank" rel="noopener" class="action-btn action-btn-uber">🚗 Uber There</a>
+        <a href="https://www.marriott.com/en-us/hotels/sfodt-san-francisco-marriott-marquis/overview/" target="_blank" rel="noopener" class="action-btn" style="background:rgba(75,31,207,0.25);border-color:var(--purple-400);">🌐 Property Website</a>
       </div>
     </div>
 
+    <!-- Property Overview -->
     <div class="card" style="margin-top:14px;">
+      <div style="font-weight:700;margin-bottom:8px;">🏨 Property Overview</div>
+      <div style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;">
+        Located in SOMA San Francisco, the Marriott Marquis has over 1,500 rooms and suites offering city and bay views. Directly across the street from Moscone Convention Center, the hotel features meeting space, a fitness center, dining outlets, and lounges.
+      </div>
+    </div>
+
+    <!-- Booking Details -->
+    <div class="card" style="margin-top:14px;">
+      <div style="font-weight:700;margin-bottom:10px;">📋 Your Reservation</div>
       <div class="data-row"><span>Confirmation #</span><strong style="color:var(--gold-400);font-size:1.05rem;letter-spacing:0.06em;">HBQZF3</strong></div>
-      <div class="data-row"><span>Check-in</span><strong>Sunday, April 5, 2026</strong></div>
-      <div class="data-row"><span>Check-out</span><strong>Friday, April 10, 2026</strong></div>
+      <div class="data-row"><span>Check-in</span><strong>Sunday, April 5, 2026 — 4:00 PM</strong></div>
+      <div class="data-row"><span>Check-out</span><strong>Friday, April 10, 2026 — 11:00 AM</strong></div>
       <div class="data-row"><span>Duration</span><span>5 nights</span></div>
       <div class="data-row"><span>Nightly Rate</span><span>$291.00</span></div>
       <div class="data-row"><span>Total</span><strong style="color:var(--gold-400);">$1,713.28</strong></div>
@@ -2433,10 +2445,76 @@
       ⚠️ <strong>Cancellation Policy:</strong> Free cancellation until 6:00 PM on April 5 (day of arrival). After that, the stay becomes fully non-refundable. Do not cancel unless certain — conference week hotel rates will be significantly higher if you need to re-book.
     </div>
 
-    <div class="card card--green-light" style="margin-top:12px;">
+    <!-- Property Info -->
+    <div class="card" style="margin-top:14px;">
+      <div style="font-weight:700;margin-bottom:10px;">🔑 Property Information</div>
+      <div class="data-row"><span>Check-in Time</span><span>4:00 PM</span></div>
+      <div class="data-row"><span>Check-out Time</span><span>11:00 AM</span></div>
+      <div class="data-row"><span>Smoke-Free</span><span>Yes — entire property</span></div>
+      <div class="data-row"><span>Front Desk</span><span>24/7 staffed</span></div>
+      <div class="data-row"><span>Accessibility</span><span>Mobility accessible rooms available</span></div>
+    </div>
+
+    <!-- Parking -->
+    <div class="card" style="margin-top:14px;">
+      <div style="font-weight:700;margin-bottom:10px;">🅿️ Parking</div>
+      <div style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;margin-bottom:8px;">
+        Valet parking only. No self-park available.
+      </div>
+      <div class="data-row"><span>Valet Fee</span><span>$91.20 – $199.50 / day</span></div>
+      <div class="data-row"><span>Oversized Vehicles</span><span>HTCL Max 6'7" or GC Min 7" — limited spaces</span></div>
+    </div>
+
+    <!-- Pet Policy -->
+    <div class="card" style="margin-top:14px;">
+      <div style="font-weight:700;margin-bottom:10px;">🐾 Pet Policy</div>
+      <div class="data-row"><span>Pets Allowed</span><span>Yes — 40 lb max weight</span></div>
+      <div class="data-row"><span>Fee</span><span>$125 per stay (non-refundable)</span></div>
+      <div class="data-row"><span>Requirement</span><span>Pet must stay with person at all times</span></div>
+    </div>
+
+    <!-- Nearest Airports -->
+    <div class="card" style="margin-top:14px;">
+      <div style="font-weight:700;margin-bottom:10px;">✈️ Nearby Airports</div>
+      <div class="data-row"><span>SFO</span><span>San Francisco International Airport</span></div>
+      <div class="data-row"><span>OAK</span><span>Oakland International Airport</span></div>
+      <div class="data-row"><span>SJC</span><span>Norman Y Mineta San Jose International</span></div>
+    </div>
+
+    <!-- Amenities -->
+    <div class="collapsible-section" style="margin-top:14px;">
+      <button class="collapsible-toggle" onclick="toggleSection('amenities-body')">
+        <span class="collapsible-title">✨ Hotel Amenities</span>
+        <span class="collapsible-arrow" id="amenities-body-arrow">▼</span>
+      </button>
+      <div class="collapsible-body" id="amenities-body">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));gap:8px;">
+          <div class="data-row" style="border:none;padding:4px 0;"><span>💪</span><span>Fitness Center</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🍸</span><span>M Club Lounge</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🍽️</span><span>On-site Dining &amp; Lounges</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>☕</span><span>Coffee/Tea In-Room</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🏧</span><span>ATM / Cash Machine</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🧳</span><span>Luggage Storage (Monitored)</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>👔</span><span>Same-Day Valet Dry Cleaning</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🧹</span><span>Daily Housekeeping</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>📦</span><span>Mail/Package Delivery</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>💱</span><span>Foreign Exchange</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🚗</span><span>Car Rental Available</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🎁</span><span>Gift/Newsstand</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🏢</span><span>Meeting &amp; Event Space</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🔒</span><span>Building Access Security</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🛎️</span><span>Concierge &amp; Luggage Service</span></div>
+          <div class="data-row" style="border:none;padding:4px 0;"><span>🐾</span><span>Pet Friendly</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location & Getting Around -->
+    <div class="card card--green-light" style="margin-top:14px;">
       <div style="font-weight:700;margin-bottom:10px;">📍 Location &amp; Getting Around</div>
-      <div class="data-row"><span>Walk to Moscone Center</span><span>~4 min (0.2 mi via Howard St)</span></div>
+      <div class="data-row"><span>Walk to Moscone Center</span><span>~4 min (directly across the street)</span></div>
       <div class="data-row"><span>Drive to SFO</span><span>~30 min (BART or rideshare)</span></div>
+      <div class="data-row"><span>Drive to OAK</span><span>~35 min (BART or rideshare)</span></div>
       <div class="data-row"><span>Nearest BART Station</span><span>Powell St (~5 min walk)</span></div>
       <div class="data-row"><span>Nearest Coffee</span><span>Blue Bottle Coffee (~2 min walk)</span></div>
     </div>
