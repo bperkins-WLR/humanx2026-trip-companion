@@ -2170,6 +2170,57 @@
       <a href="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=37.6213&dropoff[longitude]=-122.3790&dropoff[nickname]=SFO+Airport&dropoff[formatted_address]=San+Francisco+International+Airport%2C+San+Francisco%2C+CA" target="_blank" rel="noopener" class="action-btn action-btn-uber">✈️ Uber to SFO</a>
     </div>
 
+    <!-- WLR Policy -->
+    <div class="collapsible-section" style="margin-top:14px;">
+      <button class="collapsible-toggle" onclick="toggleSection('wlr-policy')">
+        <span class="collapsible-title">🏢 WLR Travel Policy Reminders</span>
+        <span class="collapsible-arrow" id="wlr-policy-arrow">▼</span>
+      </button>
+      <div class="collapsible-body" id="wlr-policy">
+
+        <div style="display:flex;flex-direction:column;gap:10px;">
+
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="font-size:1.1rem;flex-shrink:0;">🍽️</span>
+            <div><strong style="color:var(--gold-400);">Meal Reimbursement — $90/day max</strong><br>
+            <span style="font-size:0.82rem;color:var(--text-secondary);">WLR reimburses meals up to $90 per day. Keep all receipts and enter in Stampli under <strong>Travel-Meals-Dept</strong>. In the Description field enter: <em>HumanX 2026</em>.</span></div>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="font-size:1.1rem;flex-shrink:0;">🚗</span>
+            <div><strong style="color:var(--gold-400);">Transportation is Reimbursable</strong><br>
+            <span style="font-size:0.82rem;color:var(--text-secondary);">Rideshare (Uber), parking, and transit fares are covered. Enter under <strong>Travel-Transportation-Dept</strong> in Stampli.</span></div>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="font-size:1.1rem;flex-shrink:0;">🧾</span>
+            <div><strong style="color:var(--gold-400);">Stampli — Enter All Expenses</strong><br>
+            <span style="font-size:0.82rem;color:var(--text-secondary);">Any charges on your Stampli Credit Card must be entered in Stampli. Conference registration → <strong>Professional Development</strong>. Flights → <strong>Travel-Airfare-Dept</strong>. Hotel → <strong>Travel-Accommodations-Dept</strong>.</span></div>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="font-size:1.1rem;flex-shrink:0;">📋</span>
+            <div><strong style="color:var(--gold-400);">Monday.com Form — Already Submitted?</strong><br>
+            <span style="font-size:0.82rem;color:var(--text-secondary);">A Travel/Professional Development Form must be on file in Monday.com covering registration, hotel, airfare, and meals.</span>
+            <a href="https://forms.monday.com/forms/3b80de1c577b9030a7d08de00fa3d683?r=use1" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;font-size:0.8rem;color:var(--gold-400);font-weight:600;text-decoration:none;">📝 Open Monday.com Travel Form →</a></div>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="font-size:1.1rem;flex-shrink:0;">🤝</span>
+            <div><strong style="color:var(--gold-400);">Represent WLR Professionally</strong><br>
+            <span style="font-size:0.82rem;color:var(--text-secondary);">Per WLR policy: <em>"While attending any events, ALWAYS represent WLR in a professional manner."</em> You're an ambassador for the brand at HumanX 2026.</span></div>
+          </div>
+
+          <div style="display:flex;gap:12px;align-items:flex-start;">
+            <span style="font-size:1.1rem;flex-shrink:0;">📅</span>
+            <div><strong style="color:var(--gold-400);">Post-Trip: CEO Meeting Follow-Up Required</strong><br>
+            <span style="font-size:0.82rem;color:var(--text-secondary);">After attending, add a recap to your next Meeting Agenda with the President &amp; CEO. Share key takeaways, tools discovered, and how they apply to WLR's goals.</span></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- Emergency Contacts -->
     <div class="card card--red" style="margin-top:14px;">
       <div style="font-weight:700;color:var(--alert-red);margin-bottom:10px;">🚨 Emergency Contacts</div>
@@ -2449,42 +2500,54 @@
       </button>
       <div class="collapsible-body" id="budget-body">
         <div class="oop-banner" style="margin-bottom:14px;">
-          Brice estimated out-of-pocket: <strong>~$380–$460</strong> (meals &amp; personal only — flights &amp; hotel on WLR)
+          ✅ Per WLR Policy — meals reimbursable up to <strong>$90/day</strong>. Enter all expenses in <strong>Stampli</strong> using the codes below.
         </div>
         <div class="budget-split">
           <div class="budget-org">
             <div class="budget-org-header">
               <div class="budget-org-icon">🏢</div>
               <div>
-                <div class="budget-org-name">WLR Pays</div>
-                <div class="budget-org-sub">Expensed / Direct Bill</div>
+                <div class="budget-org-name">WLR Direct Bill</div>
+                <div class="budget-org-sub">Pre-paid / Charged to WLR</div>
               </div>
             </div>
             <div class="budget-line"><span>Flights (2 × RT)</span><span>$1,242.00</span></div>
             <div class="budget-line"><span>Hotel (5 nights)</span><span>$1,713.28</span></div>
             <div class="budget-line"><span>Conference Registration (×2)</span><span>$2,400.00</span></div>
-            <div class="budget-total-row"><span>WLR Total</span><span>$5,355.28</span></div>
+            <div class="budget-total-row"><span>WLR Direct Total</span><span>$5,355.28</span></div>
           </div>
           <div class="budget-org">
             <div class="budget-org-header">
-              <div class="budget-org-icon">👤</div>
+              <div class="budget-org-icon">🧾</div>
               <div>
-                <div class="budget-org-name">Brice Pays</div>
-                <div class="budget-org-sub">Personal OOP</div>
+                <div class="budget-org-name">Expense via Stampli</div>
+                <div class="budget-org-sub">Pay &amp; Submit for Reimbursement</div>
               </div>
             </div>
-            <div class="budget-line"><span>Meals (5 days × ~$50)</span><span>~$250</span></div>
+            <div class="budget-line"><span>Meals (5 days × max $90)</span><span>up to $450</span></div>
             <div class="budget-line"><span>Rideshare / Transit</span><span>~$80–120</span></div>
             <div class="budget-line"><span>Incidentals</span><span>~$50</span></div>
-            <div class="budget-total-row"><span>Brice Total</span><span>~$380–$420</span></div>
+            <div class="budget-total-row"><span>Max Reimbursable</span><span>~$620</span></div>
           </div>
         </div>
+
+        <!-- Stampli Codes -->
+        <div style="margin-top:14px;background:var(--surface-2);border-radius:10px;padding:14px;">
+          <div style="font-weight:700;font-size:0.85rem;color:var(--gold-400);margin-bottom:10px;">🧾 Stampli Expense Codes — Professional Development</div>
+          <div class="data-row"><span>Meals</span><strong style="font-family:'DM Mono',monospace;font-size:0.82rem;">Travel-Meals-Dept</strong></div>
+          <div class="data-row"><span>Hotel / Lodging</span><strong style="font-family:'DM Mono',monospace;font-size:0.82rem;">Travel-Accommodations-Dept</strong></div>
+          <div class="data-row"><span>Rideshare / Parking / Transit</span><strong style="font-family:'DM Mono',monospace;font-size:0.82rem;">Travel-Transportation-Dept</strong></div>
+          <div class="data-row"><span>Flights</span><strong style="font-family:'DM Mono',monospace;font-size:0.82rem;">Travel-Airfare-Dept</strong></div>
+          <div class="data-row"><span>Conference Registration</span><strong style="font-family:'DM Mono',monospace;font-size:0.82rem;">Professional Development</strong></div>
+          <div style="font-size:0.75rem;color:var(--text-muted);margin-top:8px;">In the <em>Description</em> field enter: <strong style="color:var(--text-secondary);">HumanX 2026</strong></div>
+        </div>
+
         <div class="food-chart" style="margin-top:14px;">
-          <div class="food-chart-title">Daily Food Budget Guide · SF Prices</div>
-          <div class="bar-row"><span class="b-label">Breakfast</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:30%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$15</span></div>
-          <div class="bar-row"><span class="b-label">Lunch</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:55%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$25</span></div>
-          <div class="bar-row"><span class="b-label">Dinner</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:70%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$35</span></div>
-          <div class="bar-row"><span class="b-label">Coffee / Snacks</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:15%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$8</span></div>
+          <div class="food-chart-title">Daily Meal Budget · WLR Max $90/day</div>
+          <div class="bar-row"><span class="b-label">Breakfast</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:20%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$18</span></div>
+          <div class="bar-row"><span class="b-label">Lunch</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:33%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$30</span></div>
+          <div class="bar-row"><span class="b-label">Dinner</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:47%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$42</span></div>
+          <div class="bar-row"><span class="b-label">Daily Total</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:100%;background:var(--alert-red);height:100%;border-radius:4px;"></div></div><span class="b-val" style="color:var(--gold-400);">$90 max</span></div>
         </div>
       </div>
     </div>
