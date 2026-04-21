@@ -2512,9 +2512,10 @@
               </div>
             </div>
             <div class="budget-line"><span>Flights (2 × RT)</span><span>$1,242.00</span></div>
-            <div class="budget-line"><span>Hotel (5 nights)</span><span>$1,713.28</span></div>
+            <div class="budget-line"><span>Priority Boarding (×2)</span><span>$100.00</span></div>
+            <div class="budget-line"><span>Hotel (5 nights · actual folio)</span><span>$1,816.04</span></div>
             <div class="budget-line"><span>Conference Registration (×2)</span><span>$2,400.00</span></div>
-            <div class="budget-total-row"><span>WLR Direct Total</span><span>$5,355.28</span></div>
+            <div class="budget-total-row"><span>WLR Direct Total</span><span>$5,558.04</span></div>
           </div>
           <div class="budget-org">
             <div class="budget-org-header">
@@ -2524,10 +2525,10 @@
                 <div class="budget-org-sub">Pay &amp; Submit for Reimbursement</div>
               </div>
             </div>
-            <div class="budget-line"><span>Meals (5 days × max $90)</span><span>up to $450</span></div>
-            <div class="budget-line"><span>Rideshare / Transit</span><span>~$80–120</span></div>
-            <div class="budget-line"><span>Incidentals</span><span>~$50</span></div>
-            <div class="budget-total-row"><span>Max Reimbursable</span><span>~$620</span></div>
+            <div class="budget-line"><span>🍽 Meals (actual receipts)</span><span>$387.25+</span></div>
+            <div class="budget-line"><span>🚗 Uber SFO ↔ Hotel (×2)</span><span>$310.37</span></div>
+            <div class="budget-line"><span>🅿️ BWI Parking (5d 1h)</span><span>$162.00</span></div>
+            <div class="budget-total-row"><span>Actual Out-of-Pocket</span><span>~$859+</span></div>
           </div>
         </div>
 
@@ -2548,6 +2549,70 @@
           <div class="bar-row"><span class="b-label">Lunch</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:33%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$30</span></div>
           <div class="bar-row"><span class="b-label">Dinner</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:47%;background:var(--gold-500);height:100%;border-radius:4px;"></div></div><span class="b-val">~$42</span></div>
           <div class="bar-row"><span class="b-label">Daily Total</span><div style="flex:1;background:var(--surface-3);border-radius:4px;overflow:hidden;height:8px;"><div style="width:100%;background:var(--alert-red);height:100%;border-radius:4px;"></div></div><span class="b-val" style="color:var(--gold-400);">$90 max</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actual Receipts Collapsible -->
+    <div class="collapsible-section" style="margin-bottom:16px;">
+      <button class="collapsible-toggle" onclick="toggleSection('receipts-body')">
+        <span class="collapsible-title">🧾 Actual Trip Receipts — All Charges</span>
+        <span class="collapsible-arrow" id="receipts-body-arrow">▼</span>
+      </button>
+      <div class="collapsible-body" id="receipts-body">
+        <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:14px;">All receipts from the trip. Meals capped at $90/day for Stampli reimbursement. Submit under <strong style="color:var(--gold-400);">Travel-Meals-Dept</strong> for food, <strong style="color:var(--gold-400);">Travel-Transportation-Dept</strong> for transit &amp; parking.</div>
+
+        <!-- Transportation -->
+        <div style="font-weight:700;font-size:0.82rem;color:var(--gold-400);margin-bottom:8px;letter-spacing:0.04em;">🚗 TRANSPORTATION</div>
+        <div style="background:var(--surface-2);border-radius:10px;overflow:hidden;margin-bottom:14px;">
+          <div class="budget-line" style="border-bottom:1px solid var(--border);">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>Uber Black SUV — SFO → Hotel</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 5 · SFO Terminal 3 → 780 Mission St · Driver: KALMYRZA ⭐4.98</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$164.01</span>
+          </div>
+          <div class="budget-line" style="border-bottom:1px solid var(--border);">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>Uber Black SUV — Hotel → SFO</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 10 · 780 Mission St → SFO · Driver: ZAFER ⭐5.00</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$146.36</span>
+          </div>
+          <div class="budget-line">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>BWI Hourly Parking (SP+)</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 5 4:17 PM – Apr 10 5:29 PM · 5d 1h 12m · Garage LX-13</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$162.00</span>
+          </div>
+          <div class="budget-total-row" style="padding:10px 14px;"><span>Transport Total</span><span style="font-family:'DM Mono',monospace;">$472.37</span></div>
+        </div>
+
+        <!-- Meals -->
+        <div style="font-weight:700;font-size:0.82rem;color:var(--gold-400);margin-bottom:8px;letter-spacing:0.04em;">🍽 MEALS &amp; DINING</div>
+        <div style="background:var(--surface-2);border-radius:10px;overflow:hidden;margin-bottom:14px;">
+          <div class="budget-line" style="border-bottom:1px solid var(--border);">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>The Grove — Yerba Buena</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 6 1:52 PM · Lunch solo · Roast Chicken + Kolsch · Visa ••••1955</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$43.93</span>
+          </div>
+          <div class="budget-line" style="border-bottom:1px solid var(--border);">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>Tempest Bar &amp; Box</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 6 9:01 PM · Tomato Soup &amp; Grilled Cheese · MC ••••0770</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$16.10</span>
+          </div>
+          <div class="budget-line" style="border-bottom:1px solid var(--border);">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>Greens Restaurant</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 7 7:44 PM · Dinner (2 guests) · Fort Mason · MC ••••0770 · tip not on file</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$142.29<span style="font-size:0.68rem;color:var(--text-muted);">+tip</span></span>
+          </div>
+          <div class="budget-line" style="border-bottom:1px solid var(--border);">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>Fresca Garden</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 8 6:33 PM · Margherita Pizza + Salad + Drinks · MC ••••0770</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$55.59</span>
+          </div>
+          <div class="budget-line">
+            <span style="display:flex;flex-direction:column;gap:2px;"><strong>Tropisueno</strong><span style="font-size:0.72rem;color:var(--text-muted);">Apr 9 6:49 PM · Dinner · Guacamole + Enchiladas + Margaritas · MC ••••0770</span></span>
+            <span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$129.34</span>
+          </div>
+          <div class="budget-total-row" style="padding:10px 14px;"><span>Meals Total (ex. tip)</span><span style="font-family:'DM Mono',monospace;">$387.25+</span></div>
+        </div>
+
+        <!-- Grand Total -->
+        <div style="background:linear-gradient(135deg,rgba(0,220,154,0.08),rgba(139,107,233,0.08));border:1px solid var(--gold-600);border-radius:10px;padding:14px;">
+          <div class="budget-line" style="font-size:0.85rem;"><span>WLR Direct (flights + boarding + hotel + conf.)</span><span style="font-family:'DM Mono',monospace;color:var(--gold-400);">$5,558.04</span></div>
+          <div class="budget-line" style="font-size:0.85rem;"><span>Transportation (Uber ×2 + BWI Parking)</span><span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$472.37</span></div>
+          <div class="budget-line" style="font-size:0.85rem;"><span>Meals (5 dinners / lunches)</span><span style="font-family:'DM Mono',monospace;color:var(--gold-300);">$387.25+</span></div>
+          <div style="border-top:1px solid var(--border);margin:10px 0;"></div>
+          <div class="budget-total-row" style="padding:0;font-size:1rem;"><span>🧮 Trip Grand Total</span><span style="font-family:'DM Mono',monospace;color:var(--gold-400);font-size:1.1rem;">~$6,417+</span></div>
         </div>
       </div>
     </div>
